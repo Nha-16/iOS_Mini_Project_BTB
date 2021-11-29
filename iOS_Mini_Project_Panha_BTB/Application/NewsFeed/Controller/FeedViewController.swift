@@ -1,25 +1,24 @@
 //
-//  ViewController.swift
+//  FeedViewController.swift
 //  iOS_Mini_Project_Panha_BTB
 //
-//  Created by BTB_001 on 24/11/21.
+//  Created by BTB_001 on 29/11/21.
 //
 
 import UIKit
+import ProgressHUD
 import SwiftyJSON
 import ProgressHUD
 import Alamofire
+class FeedViewController: UIViewController {
 
-class NewFeedViewController: UIViewController {
-    
     @IBOutlet weak var tableView: UITableView!
     
-    var articles: [ArticleModel] = []
-    var imageData: Data?
+    var article: [ArticleModel] = []
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
         tableView.refreshControl = UIRefreshControl()
         tableView.refreshControl?.addTarget(self, action: #selector(refresh), for: .valueChanged)
         fetch()
@@ -29,9 +28,8 @@ class NewFeedViewController: UIViewController {
         fetch()
     }
     func fetchs(){
-        NewFeedViewModel.shared.fetch {[weak self] articles in
-            self?.articles = articles
-            print("catch me if you can", articles)
+        FeedViewModel.shared.fetch {[weak self] articles in
+            self?.article = articles
             self?.tableView.reloadData()
         }
     }
@@ -52,17 +50,18 @@ class NewFeedViewController: UIViewController {
     }
 }
 
-extension NewFeedViewController: UITableViewDelegate, UITableViewDataSource{
+extension FeedViewController: UITableViewDelegate, UITableViewDataSource{
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        self.articles.count
+        self.article.count
     }
     
+    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! NewFeedTableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! ArticleTableViewCell
         
-        cell.config(articles: self.articles[indexPath.row])
-        print("test", articles)
+        cell.config(articles: self.article[indexPath.row])
         return cell
     }
 }
+

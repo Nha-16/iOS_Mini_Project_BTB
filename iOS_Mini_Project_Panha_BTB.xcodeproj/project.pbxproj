@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		425B4E21919D8961AF0A8273 /* Pods_iOS_Mini_Project_Panha_BTB.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B361D1F4AB01A6C0E966BA8 /* Pods_iOS_Mini_Project_Panha_BTB.framework */; };
 		8B0B6126275369E70038F18A /* ProfileSB.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B0B6125275369E70038F18A /* ProfileSB.storyboard */; };
 		8B0B612827536A150038F18A /* NewFeedSB.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B0B612727536A150038F18A /* NewFeedSB.storyboard */; };
 		8B0B612A27536AB30038F18A /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B0B612927536AB30038F18A /* ProfileViewController.swift */; };
@@ -14,13 +15,20 @@
 		8B0B612E27536C870038F18A /* PostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B0B612D27536C870038F18A /* PostViewController.swift */; };
 		8B895C79274DE98B008F557E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B895C78274DE98B008F557E /* AppDelegate.swift */; };
 		8B895C7B274DE98B008F557E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B895C7A274DE98B008F557E /* SceneDelegate.swift */; };
-		8B895C7D274DE98B008F557E /* NewFeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B895C7C274DE98B008F557E /* NewFeedViewController.swift */; };
 		8B895C80274DE98B008F557E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B895C7E274DE98B008F557E /* Main.storyboard */; };
 		8B895C82274DE98C008F557E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B895C81274DE98C008F557E /* Assets.xcassets */; };
 		8B895C85274DE98C008F557E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B895C83274DE98C008F557E /* LaunchScreen.storyboard */; };
+		8BFD627E27548C7A00EF43BA /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BFD627D27548C7A00EF43BA /* Article.swift */; };
+		8BFD62822754A54D00EF43BA /* ArticleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BFD62812754A54D00EF43BA /* ArticleModel.swift */; };
+		8BFD628F2754E36A00EF43BA /* ArticleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BFD628E2754E36A00EF43BA /* ArticleTableViewCell.swift */; };
+		8BFD62912754E3FA00EF43BA /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BFD62902754E3FA00EF43BA /* Networking.swift */; };
+		8BFD62932754E48400EF43BA /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BFD62922754E48400EF43BA /* FeedViewController.swift */; };
+		8BFD62952755041D00EF43BA /* FeedViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BFD62942755041D00EF43BA /* FeedViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1D8CD0CCE5C3579EF8ED10CC /* Pods-iOS_Mini_Project_Panha_BTB.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS_Mini_Project_Panha_BTB.release.xcconfig"; path = "Target Support Files/Pods-iOS_Mini_Project_Panha_BTB/Pods-iOS_Mini_Project_Panha_BTB.release.xcconfig"; sourceTree = "<group>"; };
+		4B361D1F4AB01A6C0E966BA8 /* Pods_iOS_Mini_Project_Panha_BTB.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOS_Mini_Project_Panha_BTB.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B0B6125275369E70038F18A /* ProfileSB.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ProfileSB.storyboard; sourceTree = "<group>"; };
 		8B0B612727536A150038F18A /* NewFeedSB.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = NewFeedSB.storyboard; sourceTree = "<group>"; };
 		8B0B612927536AB30038F18A /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
@@ -29,11 +37,17 @@
 		8B895C75274DE98B008F557E /* iOS_Mini_Project_Panha_BTB.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOS_Mini_Project_Panha_BTB.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B895C78274DE98B008F557E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8B895C7A274DE98B008F557E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		8B895C7C274DE98B008F557E /* NewFeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewFeedViewController.swift; sourceTree = "<group>"; };
 		8B895C7F274DE98B008F557E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8B895C81274DE98C008F557E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8B895C84274DE98C008F557E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8B895C86274DE98C008F557E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8BFD627D27548C7A00EF43BA /* Article.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Article.swift; sourceTree = "<group>"; };
+		8BFD62812754A54D00EF43BA /* ArticleModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleModel.swift; sourceTree = "<group>"; };
+		8BFD628E2754E36A00EF43BA /* ArticleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleTableViewCell.swift; sourceTree = "<group>"; };
+		8BFD62902754E3FA00EF43BA /* Networking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Networking.swift; sourceTree = "<group>"; };
+		8BFD62922754E48400EF43BA /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
+		8BFD62942755041D00EF43BA /* FeedViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewModel.swift; sourceTree = "<group>"; };
+		AD79C57C30FB68ADABEC313C /* Pods-iOS_Mini_Project_Panha_BTB.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS_Mini_Project_Panha_BTB.debug.xcconfig"; path = "Target Support Files/Pods-iOS_Mini_Project_Panha_BTB/Pods-iOS_Mini_Project_Panha_BTB.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,12 +55,22 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				425B4E21919D8961AF0A8273 /* Pods_iOS_Mini_Project_Panha_BTB.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		158043839B58362B4A21A2BB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AD79C57C30FB68ADABEC313C /* Pods-iOS_Mini_Project_Panha_BTB.debug.xcconfig */,
+				1D8CD0CCE5C3579EF8ED10CC /* Pods-iOS_Mini_Project_Panha_BTB.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		8B0B611F275363180038F18A /* Post */ = {
 			isa = PBXGroup;
 			children = (
@@ -128,6 +152,8 @@
 		8B532332274E62260068B99B /* NewsFeed */ = {
 			isa = PBXGroup;
 			children = (
+				8BFD628D2754E25900EF43BA /* Extension */,
+				8BFD62852754B2E200EF43BA /* Cell */,
 				8B532339274E62D50068B99B /* Controller */,
 				8B532338274E62880068B99B /* View */,
 				8B532337274E626C0068B99B /* ViewModel */,
@@ -157,6 +183,7 @@
 		8B532335274E62580068B99B /* FeedService */ = {
 			isa = PBXGroup;
 			children = (
+				8BFD62902754E3FA00EF43BA /* Networking.swift */,
 			);
 			path = FeedService;
 			sourceTree = "<group>";
@@ -164,6 +191,8 @@
 		8B532336274E62630068B99B /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				8BFD627D27548C7A00EF43BA /* Article.swift */,
+				8BFD62812754A54D00EF43BA /* ArticleModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -171,6 +200,7 @@
 		8B532337274E626C0068B99B /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				8BFD62942755041D00EF43BA /* FeedViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -186,7 +216,7 @@
 		8B532339274E62D50068B99B /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				8B895C7C274DE98B008F557E /* NewFeedViewController.swift */,
+				8BFD62922754E48400EF43BA /* FeedViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -196,6 +226,8 @@
 			children = (
 				8B895C77274DE98B008F557E /* iOS_Mini_Project_Panha_BTB */,
 				8B895C76274DE98B008F557E /* Products */,
+				158043839B58362B4A21A2BB /* Pods */,
+				B9930B80A0837170A318072D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -218,6 +250,29 @@
 			path = iOS_Mini_Project_Panha_BTB;
 			sourceTree = "<group>";
 		};
+		8BFD62852754B2E200EF43BA /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				8BFD628E2754E36A00EF43BA /* ArticleTableViewCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		8BFD628D2754E25900EF43BA /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		B9930B80A0837170A318072D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4B361D1F4AB01A6C0E966BA8 /* Pods_iOS_Mini_Project_Panha_BTB.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -225,9 +280,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8B895C89274DE98D008F557E /* Build configuration list for PBXNativeTarget "iOS_Mini_Project_Panha_BTB" */;
 			buildPhases = (
+				913E22EF9C1D3D2042BC699F /* [CP] Check Pods Manifest.lock */,
 				8B895C71274DE98B008F557E /* Sources */,
 				8B895C72274DE98B008F557E /* Frameworks */,
 				8B895C73274DE98B008F557E /* Resources */,
+				D0D3A0416AE3D1A90020F9A8 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -287,15 +344,62 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		913E22EF9C1D3D2042BC699F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-iOS_Mini_Project_Panha_BTB-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D0D3A0416AE3D1A90020F9A8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-iOS_Mini_Project_Panha_BTB/Pods-iOS_Mini_Project_Panha_BTB-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-iOS_Mini_Project_Panha_BTB/Pods-iOS_Mini_Project_Panha_BTB-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-iOS_Mini_Project_Panha_BTB/Pods-iOS_Mini_Project_Panha_BTB-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		8B895C71274DE98B008F557E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8B895C7D274DE98B008F557E /* NewFeedViewController.swift in Sources */,
+				8BFD62952755041D00EF43BA /* FeedViewModel.swift in Sources */,
 				8B895C79274DE98B008F557E /* AppDelegate.swift in Sources */,
+				8BFD62932754E48400EF43BA /* FeedViewController.swift in Sources */,
+				8BFD627E27548C7A00EF43BA /* Article.swift in Sources */,
+				8BFD62822754A54D00EF43BA /* ArticleModel.swift in Sources */,
+				8BFD62912754E3FA00EF43BA /* Networking.swift in Sources */,
 				8B0B612A27536AB30038F18A /* ProfileViewController.swift in Sources */,
 				8B895C7B274DE98B008F557E /* SceneDelegate.swift in Sources */,
+				8BFD628F2754E36A00EF43BA /* ArticleTableViewCell.swift in Sources */,
 				8B0B612E27536C870038F18A /* PostViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -440,6 +544,7 @@
 		};
 		8B895C8A274DE98D008F557E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AD79C57C30FB68ADABEC313C /* Pods-iOS_Mini_Project_Panha_BTB.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -467,6 +572,7 @@
 		};
 		8B895C8B274DE98D008F557E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1D8CD0CCE5C3579EF8ED10CC /* Pods-iOS_Mini_Project_Panha_BTB.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
