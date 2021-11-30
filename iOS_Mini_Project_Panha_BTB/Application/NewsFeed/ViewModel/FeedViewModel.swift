@@ -12,17 +12,15 @@ struct FeedViewModel {
     
     func fetch(completion: @escaping ([ArticleModel])->()){
         Network.shared.fetchArticles { result in
-            
-            
-            switch result {
-                
-            case .success(let articles):
-                print("Successfull")
-                var modelArticles: [ArticleModel] = articles.compactMap(ArticleModel.init)
-                completion(modelArticles)
-            case .failure(let error):
-                print(error.localizedDescription)
-            }
+                switch result {
+                    case .success(let articles):
+                    print("Successfull")
+                    var modelArticles: [ArticleModel] = articles.compactMap(ArticleModel.init)
+                        completion(modelArticles)
+                    case .failure(let error):
+                    print(error.localizedDescription)
+                    
+                }
         }
     }
 }

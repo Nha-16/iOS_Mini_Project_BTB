@@ -24,11 +24,11 @@ class ArticleTableViewCell: UITableViewCell {
             self.descriptionLabel.text = articles.description
             self.dateLabel.text = articles.date
             self.authorLabel.text = articles.byAuthor
-            let url = URL(string: articles.imageUrl)
+//            let url = URL(string: articles.imageUrl)
             
-            let defaultImage = UIImage(named: "defaultimage.jpg")
-            
-            self.imgView.kf.setImage(with: url,placeholder: defaultImage, options: [.transition(.fade(0.25))])
+//            let defaultImage = UIImage(named: "defaultimage.jpg")
+//
+//            self.imgView.kf.setImage(with: url,placeholder: defaultImage, options: [.transition(.fade(0.25))])
         }
 
     override func setSelected(_ selected: Bool, animated: Bool) {

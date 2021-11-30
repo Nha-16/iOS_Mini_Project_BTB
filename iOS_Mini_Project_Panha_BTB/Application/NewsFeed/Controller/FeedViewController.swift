@@ -14,8 +14,7 @@ class FeedViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
     
-    var article: [ArticleModel] = []
-    
+    var articles: [ArticleModel] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,15 +23,18 @@ class FeedViewController: UIViewController {
         fetch()
         fetchs()
     }
+    
     @objc func refresh(){
         fetch()
     }
+    
     func fetchs(){
         FeedViewModel.shared.fetch {[weak self] articles in
-            self?.article = articles
+            self?.articles = articles
             self?.tableView.reloadData()
         }
     }
+    
     func fetch(){
         ProgressHUD.show()
         Network.shared.fetchArticles { result in
@@ -53,15 +55,20 @@ class FeedViewController: UIViewController {
 extension FeedViewController: UITableViewDelegate, UITableViewDataSource{
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        self.article.count
+        self.articles.count
     }
     
-    
+
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! ArticleTableViewCell
-        
-        cell.config(articles: self.article[indexPath.row])
+
+        cell.config(articles: self.articles[indexPath.row])
+       
         return cell
     }
+    
+    
+    
+    
 }
 

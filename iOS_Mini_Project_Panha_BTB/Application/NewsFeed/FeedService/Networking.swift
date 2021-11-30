@@ -88,9 +88,9 @@ struct Network {
                 return
             }
             do{
-                var articles:[Article] = []
-                let jsonData = try JSON(data: safeData)
-                for jsonArticle in jsonData["data"].arrayValue {
+               var articles:[Article] = []
+               let jsonData = try JSON(data: safeData)
+               for jsonArticle in jsonData["data"].arrayValue {
                     let article = Article(json: jsonArticle)
                     articles.append(article)
                 }

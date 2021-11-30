@@ -13,7 +13,6 @@ struct ArticleModel {
     let description: String
     let date : String
     let byAuthor: String
-    let imageUrl: String
     
     
    let author:[String] = ["Chinda","Thary","Maya"]
@@ -22,7 +21,6 @@ struct ArticleModel {
         self.id = article.id
         self.title = article.title
         self.description = article.description
-        self.imageUrl = article.imageUrl
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ss.SSS'Z'"
 
